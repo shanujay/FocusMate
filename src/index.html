@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Title -->
+    <title>FocusMate</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  
+  <body>
+
+
+
+    <!-- Custom Title Bar -->
+    <div id="custom-title-bar">
+      <div id="window-controls">
+        <!-- Minimize Button -->
+        <img src="assets/Minimize_Button_Img.PNG" id="minimize-btn" alt="Minimize Button Icon">
+
+        <!-- Cloce Button -->
+        <img src="assets/Close_Button_Img.PNG" id="close-btn" alt="Close Button Icon">
+        
+      </div>
+    </div>
+
+    <!-- Main Screen -->
+    <div class="main-page" id="mainPage">
+
+      <!-- Image Moon -->
+      <img src="assets/Moon_Img.PNG" alt="Moon Image" id="moonImg" class="style-img moon">
+
+      <!-- Focus Button -->
+      <div class="timer-button" id="focusBtn">
+        <a href="#" id="focusButton">
+          <img src="assets/Focus_Button_Img.PNG" id="focusButtonImg" alt="Focus Button">
+        </a>
+      </div>
+      <!-- Deep Focus Button -->
+      <div class="timer-button" id="deepFocusButton">
+        <a href="#" id="deepFocusButton">
+          <img src="assets/Deep_Focus_Button_Img.PNG" id="deepFocusButtonImg" alt="Deep Focus Button">
+        </a>
+      </div>
+
+      <!-- Bunny Image -->
+      <img src="assets/Bunny_Img.PNG" alt="Bunny Image" id="bunnyImg" class="style-img bunny">
+    
+    </div>
+
+
+    <!-- Timer Screen -->
+    <div class="timer-page" id="timerPage" style="display: none;">
+      <span id="timer" style="display: none;">00:00</span>
+
+      <!-- Timer -->
+      <img src="assets/timer/Timer_1.PNG" id="pomodoroTimer" alt="Pomodoro Timer Image">
+
+      <!-- Break Animation -->
+      <img src="assets/breakTimer/breakTimerImg_1.PNG" id="breakAnimationImg" style="display: none;">
+
+
+      <!-- Timer Controls -->
+      <div class="control-buttons" id="controlButtons">
+        <!-- Stop Timer Button -->
+        <img src="assets/stop_btn_img.png" class="timer-control-buttons" id="stopButton" alt="Stop Button Image">
+
+        <!-- Pause Timer Button -->
+        <img src="assets/pause_btn_img.PNG" class="timer-control-buttons" id="pauseResumeButton" alt="Pause Resume Button Image">
+
+        </div>
+    </div>
+
+
+    <!-- JS Link -->
+    <script src="render.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+/*    Body Styles     */
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../src/assets/Bg_Img.png'); /* Background Image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  overflow: hidden;
+}
+
+
+/*    Custom Title Bar Styles   */
+#custom-title-bar {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #C1C5F8;
+  height: 20px;
+  width: 100%;
+  top: 0; /* Ensures it starts from the top */
+  left: 0;
+  padding: 0px;
+  margin: 0;
+  -webkit-app-region: drag; /* Allows dragging */
+}
+#window-controls {
+  display: flex;
+  gap: 2px;
+}
+#window-controls img {
+  width: 10px;
+  height: 10px;
+  padding: 3px;
+  top: 0;
+  border: none;
+  cursor: pointer;
+  transition: transform background 0.5s ease-in-out;
+  -webkit-app-region: no-drag;
+}
+/* Custom button hover effects */
+/* Hover Effects */
+#minimize-btn:hover { 
+  transform: scale(1.2);
+  background: #a0a5ee;
+}
+#close-btn:hover { 
+  transform: scale(1.2);
+  background: #a0a5ee;
+}
+
+
+/*    Main Page Styles     */
+#mainPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+/* Focus Button */
+.timer-button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+  -webkit-app-region: no-drag;
+}
+
+.timer-button a {
+  display: block;
+}
+
+.timer-button img {
+  width: 120px;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.timer-button:hover {
+  transform: scale(1.2);
+}
+.style-img {
+  width: 120px;
+  height: auto;
+  position: absolute;
+}
+.moon {
+  right: 0px;
+  top: 20px;
+}
+.bunny {
+  bottom: 10px;
+  left: 0px;
+}
+
+
+/*    Timer Page Styles      */
+.timer-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#pomodoroTimer {
+  width: 250px;
+  height: auto;
+}
+
+/*    Control Buttons Styles    */
+.control-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.timer-control-buttons {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+#stopButton:hover {
+  transform: scale(1.2);
+}
+#pauseResumeButton:hover {
+  transform: scale(1.2);
+}
